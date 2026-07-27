@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Himalaya Trail Notes — Part 2</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Spectral:opsz,wght@8..40,500;8..40,600;8..40,700&family=Space+Grotesk:wght@400;500;600&display=swap');
+
+  :root{
+    --deep:#0c1e2e;
+    --panel:#132b40;
+    --ice:#8fd3f4;
+    --ice-dim:#4d7f9c;
+    --glacier:#e8f4fa;
+  }
+
+  *{box-sizing:border-box;}
+
+  body{
+    margin:0;
+    background:var(--deep);
+    background-image:
+      radial-gradient(circle at 15% 8%, rgba(143,211,244,0.08), transparent 45%),
+      radial-gradient(circle at 90% 85%, rgba(143,211,244,0.06), transparent 40%);
+    color:var(--glacier);
+    font-family:'Space Grotesk', sans-serif;
+    line-height:1.65;
+  }
+
+  .wrap{
+    max-width:760px;
+    margin:0 auto;
+    padding:64px 24px 96px;
+  }
+
+  .compass{
+    position:absolute;
+    top:48px;
+    right:24px;
+    width:64px;
+    height:64px;
+    opacity:0.35;
+  }
+
+  header{
+    position:relative;
+    border-bottom:1px solid rgba(143,211,244,0.2);
+    padding-bottom:32px;
+    margin-bottom:44px;
+  }
+
+  .eyebrow{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:12px;
+    letter-spacing:0.2em;
+    text-transform:uppercase;
+    color:var(--ice);
+    font-weight:500;
+    margin-bottom:16px;
+  }
+
+  .eyebrow::before{
+    content:"";
+    width:22px;
+    height:1px;
+    background:var(--ice);
+    display:inline-block;
+  }
+
+  h1{
+    font-family:'Spectral', serif;
+    font-weight:600;
+    font-style:italic;
+    font-size:clamp(30px, 4.6vw, 44px);
+    line-height:1.15;
+    margin:0 0 20px;
+    color:#fff;
+  }
+
+  header p{
+    font-size:15px;
+    color:#a9c4d6;
+    max-width:56ch;
+    margin:0;
+  }
+
+  .region-title{
+    font-family:'Spectral', serif;
+    font-size:13px;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    font-weight:600;
+    color:var(--ice);
+    margin:0 0 6px;
+  }
+
+  .region-sub{
+    font-size:13px;
+    color:#7fa0b8;
+    margin:0 0 24px;
+  }
+
+  ol.links{
+    list-style:none;
+    counter-reset:item;
+    margin:0;
+    padding:0;
+  }
+
+  ol.links li{
+    counter-increment:item;
+    position:relative;
+    padding-left:44px;
+    border-bottom:1px solid rgba(143,211,244,0.12);
+  }
+
+  ol.links li::before{
+    content:counter(item, decimal-leading-zero);
+    position:absolute;
+    left:0;
+    top:16px;
+    font-family:'Space Grotesk', sans-serif;
+    font-size:12px;
+    color:var(--ice-dim);
+    letter-spacing:0.05em;
+  }
+
+  ol.links a{
+    display:flex;
+    align-items:baseline;
+    gap:14px;
+    padding:14px 4px;
+    text-decoration:none;
+    color:var(--glacier);
+    font-size:15px;
+    transition:color 0.15s ease, transform 0.15s ease;
+  }
+
+  ol.links a:hover{
+    color:var(--ice);
+    transform:translateX(4px);
+  }
+
+  .site-tag{
+    font-size:11px;
+    color:#5c85a0;
+    white-space:nowrap;
+    margin-left:auto;
+    padding-left:12px;
+    font-family:'Space Grotesk', sans-serif;
+    letter-spacing:0.04em;
+  }
+
+  .back{
+    margin-top:44px;
+    padding:22px;
+    background:var(--panel);
+    border-left:2px solid var(--ice);
+    font-size:14px;
+    color:#a9c4d6;
+    border-radius:2px;
+  }
+
+  .back a{
+    color:var(--ice);
+    font-weight:600;
+    text-decoration:none;
+    border-bottom:1px solid var(--ice-dim);
+  }
+
+  footer{
+    margin-top:56px;
+    padding-top:24px;
+    border-top:1px solid rgba(143,211,244,0.15);
+    font-size:12px;
+    color:#5c85a0;
+    letter-spacing:0.03em;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <svg class="compass" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="32" cy="32" r="30" stroke="#8fd3f4" stroke-width="1"/>
+      <circle cx="32" cy="32" r="1.5" fill="#8fd3f4"/>
+      <path d="M32 6 L36 30 L32 32 L28 30 Z" fill="#8fd3f4"/>
+      <path d="M32 58 L28 34 L32 32 L36 34 Z" fill="#4d7f9c"/>
+    </svg>
+    <div class="eyebrow">Expedition Log · Part 2</div>
+    <h1>Further along the trail</h1>
+    <p>The second half of this field index — pilgrimage notes, altitude diaries, and route guides for Kailash and the wider Himalaya, continued from the first log.</p>
+  </header>
+
+  <div class="region">
+    <div class="region-title">Continuing the Index</div>
+    <div class="region-sub">17 entries — bearing 002 of 002</div>
+    <ol class="links">
+      <li><a href="https://kailashparvat.carrd.co/" target="_blank" rel="noopener">Kailash Mansarovar Yatra: The Ultimate Spiritual Journey of a Lifetime<span class="site-tag">Carrd</span></a></li>
+      <li><a href="https://notes.hive.com/?workspaceId=dogHZG4bMoKstCh9Y&notebookId=8zXTtHapRvQ9KkiAy&shareToken=97a6a46d67fb37a3f61cf1629c75aa3cc054d106cac8a8f9d7a3d6bdabfbc75b" target="_blank" rel="noopener">Kailash Mansarovar Yatra: Explore the Sacred Mountains of Tibet<span class="site-tag">Hive Notes</span></a></li>
+      <li><a href="https://www.cake.me/portfolios/kailash-mansarovar-yatra-guide" target="_blank" rel="noopener">Kailash Mansarovar Yatra Guide<span class="site-tag">Cake.me</span></a></li>
+      <li><a href="https://travelblog.mataroa.blog/blog/kailash-mansarovar-yatra-a-sacred-expedition-to-kailash-parvat/" target="_blank" rel="noopener">Kailash Mansarovar Yatra: A Sacred Expedition to Kailash Parvat<span class="site-tag">Mataroa</span></a></li>
+      <li><a href="https://69cb7e60a6a79f5a7cc144ad--zingy-kleicha-0271dc.netlify.app/" target="_blank" rel="noopener">Kailash Mansarovar: The World's Most Sacred Mountain Journey<span class="site-tag">Netlify</span></a></li>
+      <li><a href="https://travelfeed.com/@prabik/kailash-mansarovar-yatra-journey-to-the-sacred-heart-of-tibet" target="_blank" rel="noopener">Kailash Mansarovar Yatra: Journey to the Sacred Heart of Tibet<span class="site-tag">TravelFeed</span></a></li>
+      <li><a href="https://articles.abilogic.com/796096/complete-guide-kailash-mansarovar-yatra.html" target="_blank" rel="noopener">Complete Guide to Kailash Mansarovar Yatra from Nepal<span class="site-tag">Abilogic</span></a></li>
+      <li><a href="https://tripatini.com/profiles/blogs/kailash-mansarovar-yatra-the-ultimate-guide-to-the-sacred-pilgrim" target="_blank" rel="noopener">Kailash Mansarovar Yatra: The Ultimate Guide to the Sacred Pilgrimage<span class="site-tag">Tripatini</span></a></li>
+      <li><a href="https://mytravaly.com/blog/blog-read/?t=Kailash+Mansarovar+Yatra%3A+Complete+Guide+to+the+Sacred+Pilgrimage+Journey+%282025-2026%29" target="_blank" rel="noopener">Kailash Mansarovar Yatra: Complete Guide to the Sacred Pilgrimage Journey (2025–2026)<span class="site-tag">MyTravaly</span></a></li>
+      <li><a href="https://246289048.hs-sites-na2.com/mount-kailash-the-worlds-most-mysterious-sacred-mountain" target="_blank" rel="noopener">Mount Kailash: The World's Most Mysterious Sacred Mountain<span class="site-tag">HubSpot</span></a></li>
+      <li><a href="https://wefunder.com/feed/326426-kailash-mansarovar-yatra-the-ultimate-spiritual-journey-to-mount-kailash-and" target="_blank" rel="noopener">Kailash Mansarovar Yatra: The Ultimate Spiritual Journey to Mount Kailash<span class="site-tag">Wefunder</span></a></li>
+      <li><a href="https://prabik-langtang-vs-annapurna.my.canva.site/" target="_blank" rel="noopener">Langtang vs Annapurna: which trek to choose<span class="site-tag">Canva Site</span></a></li>
+      <li><a href="https://ivebo.co.uk/read-blog/364076" target="_blank" rel="noopener">Kailash Mansarovar Yatra Guide 2026: Mount Kailash Mystery, Parikrama, Tibet Travel & Complete Pilgrimage Guide<span class="site-tag">Ivebo</span></a></li>
+      <li><a href="https://pastelink.net/jetxoh1u" target="_blank" rel="noopener">Trail notes and reference<span class="site-tag">Pastelink</span></a></li>
+      <li><a href="https://social.mytamam.com/blogs/20875/How-to-Pack-Smart-for-Any-Trek-in-the-Langtang" target="_blank" rel="noopener">How to Pack Smart for Any Trek in the Langtang Region<span class="site-tag">Sngine</span></a></li>
+      <li><a href="https://logcla.com/blogs/1723928/The-Ultimate-Guide-to-Nepal-s-Top-3-Trekking-Destinations" target="_blank" rel="noopener">The Ultimate Guide to Nepal's Top 3 Trekking Destinations<span class="site-tag">Logcla</span></a></li>
+      <li><a href="https://www.pikumil.com/blogs/112947/What-to-Expect-During-the-Kailash-Mansarovar-Yatra-A-Journey" target="_blank" rel="noopener">What to Expect During the Kailash Mansarovar Yatra: A Journey<span class="site-tag">Pikumil</span></a></li>
+    </ol>
+  </div>
+
+  <div class="back">
+    ← Missed the start of the log? Return to <a href="https://ktmluklaflight.github.io/travel/">Part 1 of the field index</a>
+  </div>
+
+  <footer>
+    Field index compiled from trip reports and route guides across the web. Last updated July 2026.
+  </footer>
+
+</div>
+</body>
+</html>
